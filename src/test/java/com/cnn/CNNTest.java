@@ -132,8 +132,7 @@ public class CNNTest {
         this.createDriver(type, browser, version, os, device, method.getName());
         WebDriver driver = this.getWebDriver();
         driver.get("https://cnn.com");
-        driver.findElement(By.linkText("Sports")).click();
-        assertEquals(driver.getTitle(), "Latest sports news, videos, interviews and comment - CNN");
+        assertEquals(driver.getTitle(), "CNN - Breaking News, Latest News and Videos");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("/*@visual.init*/", "CNN Visual Test");
 
@@ -141,8 +140,6 @@ public class CNNTest {
 
         this.annotate("sleeping for a few seconds so humans can see the changes");
         js.executeScript("/*@visual.snapshot*/", "CNN Page");
-//        Map response = (Map)((JavascriptExecutor) driver).executeScript("/*@visual.end*/");
-//        Assert.assertTrue((Boolean)response.get("passed"), (String)response.get("message"));
 
     }
     @Test(dataProvider = "hardCodedBrowsers")
@@ -150,7 +147,8 @@ public class CNNTest {
         this.createDriver(type, browser, version, os, device, method.getName());
         WebDriver driver = this.getWebDriver();
         driver.get("https://cnn.com");
-        assertEquals(driver.getTitle(), "CNN - Breaking News, Latest News and Videos");
+        driver.findElement(By.linkText("Sports")).click();
+        assertEquals(driver.getTitle(), "Latest sports news, videos, interviews and comment - CNN");
         JavascriptExecutor js = (JavascriptExecutor) driver;
 //        js.executeScript("/*@visual.init*/", "CNN Visual Test");
 
