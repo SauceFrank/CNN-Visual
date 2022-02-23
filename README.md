@@ -13,7 +13,7 @@ SAUCE_TUNNEL
 
 Windows 10 Chrome 98.0, and Windows 10 Firefox 97.0
 
-Runs Visual test against CNN.com. Run to set baseline by accepting all changes.
+Runs Visual test against CNN.com. Run to set baseline by accepting all changes.   
 Then run later or the next day to see the changes.
 
 mvn dependency:resolve    
