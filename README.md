@@ -7,7 +7,7 @@ Runs visual test on Pantheon.io Site.
 Environment Variables Required:
 
 SAUCE_USERNAME   
-SAUCE_ACCESS_KEY
+SAUCE_ACCESS_KEY   
 BUILD_TAG   
 SAUCE_TUNNEL
 
