@@ -20,6 +20,7 @@ public class CNNTest {
     public String buildTag = System.getenv("BUILD_TAG");
     public String username = System.getenv("SAUCE_USERNAME");
     public String accesskey = System.getenv("SAUCE_ACCESS_KEY");
+    public String sauceTunnel = System.getenv("SAUCE_TUNNEL");
 
     /**
      * ThreadLocal variable which contains the  {@link WebDriver} instance which is used to perform browser interactions with.
@@ -62,6 +63,7 @@ public class CNNTest {
         MutableCapabilities sauceOptions = new MutableCapabilities();
         sauceOptions.setCapability("username", username);
         sauceOptions.setCapability("accesskey", accesskey);
+        sauceOptions.setCapability("tunnelIdentifier", sauceTunnel);
         capabilities.setCapability("build", buildTag);
         capabilities.setCapability("sauce:options", sauceOptions);
         String jobName = methodName;
