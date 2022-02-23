@@ -2,7 +2,7 @@
 
 4 Concurrent Sessions   
 
-Runs visual test on Pantheon.io Site.
+Runs visual test on CNN.Com Site.
 
 Environment Variables Required:
 
