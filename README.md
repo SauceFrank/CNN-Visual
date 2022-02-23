@@ -6,9 +6,9 @@ Runs visual test on Pantheon.io Site.
 
 Environment Variables Required:
 
-SAUCE_USERNAME
+SAUCE_USERNAME 
 SAUCE_ACCESS_KEY
-BUILD_TAG
+BUILD_TAG   
 SAUCE_TUNNEL
 
 Windows 10 Chrome 98.0, and Windows 10 Firefox 97.0
